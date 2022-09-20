@@ -71,7 +71,6 @@
         <hr />
     </div>
 
-    <!-- Comments section-->
     <div id="comment-area">
 
         <!-- Comment form-->
@@ -92,13 +91,12 @@
             </div>
         </div>
 
-                <!-- Single comment-->
         {% if post.comment_set.exists %}
 
             {% for comment in post.comment_set.iterator %}
-
+                <!-- Single comment-->
                 <div class="media-mb4" id="comment-{{ comment.pk }}">
-                    <img class="d-flex mr-3 rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                    <img class="d-flex mr-3 rounded-circle" src="{{ comment.get_avatar_url}}" alt="{{comment.author}}" width="40px" />
                     <div class="media-body">
                         {% if user.is_authenticated and comment.author == user %}
                             <div class="float-right">
