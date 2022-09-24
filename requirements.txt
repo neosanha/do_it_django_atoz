@@ -2,6 +2,7 @@ asgiref==3.5.2
 asttokens==2.0.8
 backcall==0.2.0
 beautifulsoup4==4.11.1
+bleach==5.0.1
 certifi==2022.9.14
 cffi==1.15.1
 charset-normalizer==2.1.1
@@ -14,6 +15,7 @@ django-allauth==0.51.0
 django-crispy-forms==1.14.0
 django-extensions==3.2.1
 django-markdownx==3.0.1
+django-summernote==0.8.20.0
 executing==1.0.0
 gunicorn==20.1.0
 idna==3.4
@@ -43,3 +45,4 @@ traitlets==5.4.0
 tzdata==2022.2
 urllib3==1.26.12
 wcwidth==0.2.5
+webencodings==0.5.1
